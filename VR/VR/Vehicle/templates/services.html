@@ -1,0 +1,179 @@
+{% extends 'header.html' %}{% block body %}{% load static %}
+<!--/header-->
+<div class="inner-banner"></div>
+<section class="w3l-breadcrumb">
+    <div class="container">
+        <ul class="breadcrumbs-custom-path">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li class="active">
+                <span class="fa fa-arrow-right mx-2" aria-hidden="true"></span> Services
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- services page block grids -->
+<section class="w3l-services py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="row bottom-ab-grids">
+            <div class="col-lg-6 bottom-ab-left align-self">
+                <h3 class="title-big mb-4">
+                    We have created Professional service
+                </h3>
+                <p class="">
+                    An Intangible product that a contractor to help a customer manage a specific part of their business.
+                </p>
+                <div class="cont-4 mt-lg-5 mt-4">
+                    <div class="list mb-4">
+                        <span class="fa fa-check"></span>
+                        <div class="list-info">
+                            <h4>Create a community</h4>
+                            <p>
+                                The Community has 4 members and each member is well engaged with each other. Each member have thier perticular work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <span class="fa fa-check"></span>
+                        <div class="list-info">
+                            <h4>Perfect workspace</h4>
+                            <p>
+                                We dont have any kind of working space currently.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 bottom-right-grids mt-lg-0 mt-5">
+                <img src="assets/images/services.jpg" alt="" class="radius-image img-fluid" />
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //services page block grids -->
+<section class="w3l-content-4 py-5" id="features">
+    <div class="content-4-main py-lg-5 py-md-4 py-2">
+        <div class="container">
+            <div class="content-info-in row">
+                <div class="content-left col-lg-6">
+                    <h3 class="title-small">Our Features</h3>
+                    <h3 class="title-big">we are here to give you the best experience in App</h3>
+                    <p class="mt-4">
+                        We are here to provide the best experience in such a better way that everyone can easily use our application and allocate their vehicle at anytime and get every single information about vehicle.
+                    </p>
+                    <a class="btn btn-style btn-primary mt-md-5 mt-4" href="{% url 'about' %}">Know More</a>
+                </div>
+                <div class="content-right col-lg-6 pl-lg-4 mt-lg-0 mt-md-5 mt-5">
+                    <div class="row content4-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 content4-right-icon">
+                            <div class="content4-icon">
+                                <span class="fa fa-cogs"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 content4-right-info">
+                            <h6><a href="#url">Innovative Approach</a></h6>
+                            <p>
+                                We can give you every Updated Information about your Registered Vehicle.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content4-right-grids mb-lg-5 mb-4">
+                        <div class="col-2 content4-right-icon">
+                            <div class="content4-icon">
+                                <span class="fa fa-clock-o"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 content4-right-info">
+                            <h6><a href="#url"> Quality time</a></h6>
+                            <p>
+                                We can capture Numberplate at a Moment when a user is Arrived and allot them a parking area.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row content4-right-grids">
+                        <div class="col-2 content4-right-icon">
+                            <div class="content4-icon">
+                                <span class="fa fa-thumbs-up"></span>
+                            </div>
+                        </div>
+                        <div class="col-10 content4-right-info">
+                            <h6><a href="#url"> 24/7 Support</a></h6>
+                            <p>
+                                We can give a Solution to user's any Query.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /bottom-grids-->
+<section class="w3l-bottom-grids-6 w3l-services py-5" id="services">
+    <div class="container py-lg-5 py-md-4">
+        <h6 class="title-small text-center">Our Services</h6>
+        <h3 class="title-big mb-md-5 mb-4 text-center">Look our best Services</h3>
+        <div class="grids-area-hny main-cont-wthree-fea row">
+            <div class="col-lg-4 col-md-6 grids-feature">
+                <div class="area-box">
+                    <span class=" fa fa-expeditedssl  "></span>
+                    <h4><a href="#feature" class="title-head">Best security</a></h4>
+                    <p class="">
+                        We are providing our best and high profiled security to our Clients.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
+                <div class="area-box">
+                    <span class="fa f fa-user-o mt-0"></span>
+                    <h4><a href="#feature" class="title-head">Best recognization</a></h4>
+                    <p class="">
+                        We have High Quality Lences of camera for a Good Recognization.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
+                <div class="area-box">
+                    <span class="fa fa-pencil-square-o mt-0"></span>
+                    <h4><a href="#feature" class="title-head">Anytime Allocation</a></h4>
+                    <p class="">
+                        We are able to Allocate for both Authorized and Non-authorized users.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
+            <div class="area-box">
+                <span class="fa fa-handshake-o -0"></span>
+                <h4><a href="#feature" class="title-head">Helping Hands</a></h4>
+                <p class="">
+                    We are hear to help you out from any Query at Anytime.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- //bottom-grids-->
+<!-- middle -->
+<div class="middle py-5" id="call">
+    <div class="container py-lg-3">
+        <div class="welcome-left text-center py-md-5 py-3">
+            <h3 class="title-big">Still Have Some Questions Left?</h3>
+            <h3 class="mt-4">
+                Call us : <a href="tel:+1 123 456 789">+91 8320928418</a>
+            </h3>
+            <p class="mt-4">
+                Contact our helpline 24x7 Support on registration or login enquiries
+            </p>
+            <a href="{% url 'contact' %}" class="btn btn-style btn-primary mt-sm-5 mt-4 mr-2">Contact Us</a
+      >
+    </div>
+  </div>
+</div>
+<!-- //middle -->
+{% include 'footer.html' %}
+</body>
+</html>
+{% endblock %}

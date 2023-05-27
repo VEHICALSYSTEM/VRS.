@@ -1,0 +1,130 @@
+{% extends 'header.html' %}{% load static %}{% block body %}
+<!-- home page about section -->
+<section class="w3l-index3" id="about">
+    <div class="midd-w3 py-5">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <img src="assets/images/blog2.jpg" alt="" class="radius-image img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-md-5 mt-4 align-self">
+                    <h3 class="title-big mx-0">We help you to get your best Work Done.</h3>
+                    <p class="mt-md-4 mt-3">Here you can spot any vehicles using the advanced technologies and machine learning immersed into Artificial Intelligence</p>
+                    <a class="btn btn-style btn-primary mt-md-5 mt-4" href="{% url 'about' %}"> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home page about section -->
+<!-- stats -->
+<section class="w3l-stats py-5" id="stats">
+    <div class="gallery-inner container py-lg-5 py-md-4">
+        <div class="row stats-con">
+            <div class="col-md-3 col-6 stats_info counter_grid">
+                <p class="counter">1869</p>
+                <h3>Detected vehicles</h3>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid1">
+                <p class="counter">12996</p>
+                <h3>Vehicle Registry</h3>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid mt-md-0 mt-4">
+                <p class="counter">1300</p>
+                <h3>Collaborated companies</h3>
+            </div>
+            <div class="col-md-3 col-6 stats_info counter_grid2 mt-md-0 mt-4">
+                <p class="counter">1245</p>
+                <h3>Unknown vehicles</h3>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats -->
+<!-- services section -->
+<section id="services" class="w3l-servicesblock3 py-5">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <div class="welcome-left">
+            <h3 class="title-big mb-md-5 mb-4 mx-auto text-center">Vehicle Detection accuracy</h3>
+            <div class="grids-area-hny main-cont-wthree-fea row pt-4">
+                <div class="col-lg-6 col-md-6 grids-feature">
+                    <span class="fa fa-line-chart"></span>
+                    <div class="area-box">
+                        <h4><a href="#feature" class="title-head">Vehicles Detection Technique</a></h4>
+                        <p class="my-3">Using Big data to detect the vehicle</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 grids-feature mt-md-0 mt-4">
+                    <span class="fa fa-university"></span>
+                    <div class="area-box">
+                        <h4><a href="" class="title-head">Payments accepted</a></h4>
+                        <p class="my-3">All online payments including UPI are accepted here</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //services section -->
+<section class="w3l-team py-5" id="team">
+    <div class="container py-lg-5 py-md-4 py-2">
+        <h3 class="title-big mb-md-5 mb-4 text-center">Detected Vehicles</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{% static 'images/car.jfif' %}" alt="team member" class="img-fluid radius-image" />
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Car number plate</h3>
+                        <span class="post"></span>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-linkedin"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="our-team">
+                    <div class="pic">
+                        <img src="{% static 'images/bike.jfif' %}" alt="team member" class="img-fluid radius-image" />
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Bike number plate</h3>
+                        <span class="post">Supervisor</span>
+                        <ul class="social">
+                            <li>
+                                <a href="#" class="fa fa-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa fa-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="{url %'https://instagram.com/vrs_025?igshid=ZDc4ODBmNjlmNQ=='%}" class="fa fa-linkedin"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<!-- testimonials -->
+{% include 'footer.html' %}
+
+</body>
+
+</html>
+{% endblock %}

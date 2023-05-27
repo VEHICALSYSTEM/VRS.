@@ -1,0 +1,50 @@
+{% block body %}{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>VRS Sign Up From</title>
+    <link rel="stylesheet" href="{% static 'css/signupform.css' %}" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sign up</h1>
+
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="tbox">
+                <input type="text" name="uname" placeholder="username" />
+            </div>
+            <div class="tbox">
+                <input type="text" name="uemail" placeholder="email" />
+            </div>
+            <div class="tbox">
+                <input type="password" name="upass" placeholder="password" />
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Register" style="
+            background-color: blue;
+            color: white;
+            width: 125px;
+            height: 50px;
+            border: none;
+            font-size: 20px;
+          " />
+        </form>
+    </div>
+</body>
+{% ifequal error "NO" %}
+<script type="text/javascript">
+    alert("User Registration successfull");
+    window.location = "";
+</script>
+{% endifequal %} {% ifequal error "YES" %}
+<script type="text/javascript">
+    alert("Cannot register user, please try again");
+</script>
+{% endifequal %}
+
+
+</html>
+{% endblock %}
